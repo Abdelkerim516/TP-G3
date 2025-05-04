@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div><strong class="logo">Make-up</strong></div>
+        <div class="menu">
+          <a href="#" style="color:white; margin-right: 15px;">Home</a>
+          <a href="#" style="color:white; margin-right: 15px;">About</a>
+          <a href="#" style="color:white;">Trod</a>
+        </div>
+        <div class="cart" id="cart-icon">
+          Card : <span class="badge" id="cart-count">0</span>
+          <div class="cart-info" id="cart-info">Votre panier est vide.</div>
+        </div>
+      </div>
+      
+      <!-- Section Slideshow + Formulaire -->
+      <div class="bloc1">
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="images/m1.png" alt="Image 1">
+            <div class="text">Maquillage a Bas Prix</div>
+          </div>
+          <div class="slide fade">
+            <img src="images/m2.png" alt="Image 2">
+            <div class="text">Avec des professionnele</div>
+          </div>
+          <div class="slide fade">
+            <img src="images/m3.png" alt="Image 3">
+            <div class="text">Qui prenne</div>
+          </div>
+          <div class="slide fade">
+            <img src="images/m4.png" alt="Image 4">
+            <div class="text">Soigne de leur client </div>
+          </div>
+          <div class="slide fade">
+            <img src="images/m5.png" alt="Image 5">
+            <div class="text">Venez decouvrire notre </div>
+          </div>
+          <div class="slide fade">
+            <img src="images/m6.png" alt="Image 5">
+            <div class="text">Produits sur notre Site Commander Dés maintenat</div>
+          </div>
+        </div>
+      
+        <div class="newsletter">
+          <form>
+            <fieldset>
+              <legend><strong>Formulaire d'abonnement</strong></legend>
+      
+              <label for="nom">Nom :</label><br>
+              <input type="text" id="nom" name="nom" required><br>
+      
+              <label for="email">Email :</label><br>
+              <input type="email" id="email" name="email" required><br>
+      
+              <label>
+                <input type="checkbox" name="news" checked>
+                Je souhaite recevoir la newsletter
+              </label><br><br>
+      
+              <button type="submit">S'abonner</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+<center>
+    <section class="section3">
+      <h1>Produits tendances</h1>
+    </section>
+  </center>
+  <section class="section-produits">
+    <div class="ligne">
+      <div>
+        <img src="images/10.jpg" alt="Produit 1" width="200"  />
+      </div>
+      <div>
+        <img src="images/9.jpeg" alt="Produit 2" width="200" />
+      </div>
+      <div>
+        <img src="images/1.jpg" alt="Produit 3" width="200" />
+      </div>
+    </div>
+  </section>
+  <!--Valeur et objecti-->
+  <section class="section2">
+    <div class="container">
+      <div class="bloc2">
+        <h5>Valeurs</h5>
+        <p>Respect des valeurs et de la beauté africaine.</p>
+      </div>
+      <div class="bloc2">
+        <h5>Missions</h5>
+        <p>
+          Notre mission est de lutter contre la dépigmentation de la peau et
+          la prolifération des produits contrefaits.
+        </p>
+      </div>
+      <div class="bloc2">
+        <h5>Objectifs</h5>
+        <p>Offrire des meilleure Produits</p>
+      </div>
+    </div>
+  </section>
+  <!--Valeur et objet-->
+
+<div style="text-align: center; padding: 20px;">
+  <h3>Produits</h3>
+</div>
+
+<div class="ligne"  style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/1.jpg" alt="Produit 1" style="width: 150px;">
+    Crème Hydratante Visage Glow+
+    <button onclick="ajouterProduit('Crème Hydratante Visage Glow+')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/2.jpeg" alt="Produit 2" style="width: 150px;">
+    Rouge à lèvres matte
+    <button onclick="ajouterProduit('Rouge à lèvres matte')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/3.jpg" alt="Produit 3" style="width: 150px;">
+    Sérum anti-taches
+    <button onclick="ajouterProduit('Sérum anti-taches')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/4.jpg" alt="Produit 4" style="width: 150px;">
+    Lait corporel éclaircissant
+    <button onclick="ajouterProduit('Lait corporel éclaircissant')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/5.jpg" alt="Produit 5" style="width: 150px;">
+    Démaquillant doux
+
+    <button onclick="ajouterProduit('Démaquillant doux')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/6.jpeg" alt="Produit 6" style="width: 150px;">
+    Soins visage
+    <button onclick="ajouterProduit('Soins visage')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/7.jpeg" alt="Produit 7" style="width: 150px;">
+    Nettoyant visage
+    <button onclick="ajouterProduit('Nettoyant visage')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/aaa.jpg" alt="Produit 8" style="width: 150px;">
+    Maquillage lèvres
+    <button onclick="ajouterProduit('Maquillage lèvres')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/11.jpg" alt="Produit 9" style="width: 150px;">
+    Dove
+
+    <button onclick="ajouterProduit('Dove')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/12.jpg" alt="Produit 10" style="width: 150px;">
+    Garnier
+
+    <button onclick="ajouterProduit('Garnier')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/13.jpg" alt="Produit 10" style="width: 150px;">
+    Rouge à lèvres
+    <button onclick="ajouterProduit('Rouge à lèvres')">Ajouter</button>
+  </div>
+  <div class="bloc4" style="margin: 10px; text-align: center;">
+    <img src="images/14.jpg" alt="Produit 10" style="width: 150px;">
+    Gomme
+    <button onclick="ajouterProduit('Gomme')">Ajouter</button>
+  </div>
+</div>
+
+<section class="section6">
+    <div class="container">
+      <div class="bloc2">
+        <img class="icon" width="90" height="90" src="https://img.icons8.com/officel/100/add-shopping-cart.png" alt="add-shopping-cart"/>
+        <figcaption>Commande</figcaption>
+      </div>
+      <div class="bloc2">
+        <img class="icon" width="90" height="90" src="https://img.icons8.com/officel/80/card-in-use.png" alt="card-in-use"/>
+        <figcaption>Achat</figcaption>
+      </div>
+      <div class="bloc2">
+        <img class="icon" width="90" height="90" src="https://img.icons8.com/3d-fluency/100/delivery.png" alt="delivery"/>
+        <figcaption>Livraison</figcaption>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <section class="section7">
+        <div class="bloc5">
+          <h6>Adresse</h6>
+          <p style="font-size: 9px">Moundou-TCHAD</p>
+          <p style="font-size: 9px">Avenue Ngarta-Toumbalbaye</p>
+          <p style="font-size: 9px">Tél : (+235) 69 80 67 41</p>
+          <p style="font-size: 9px">Tél : (+235) 98 16 38 97</p>
+          <p style="font-size: 9px">Email : make-up@yahoo.td</p>
+        </div>
+      </section>
+
+      <section class="section8">
+        <div class="bloc5">
+          <h6>Liens raccourcis</h6>
+          <p style="font-size: 9px"><a href="#" style="color: white;">Home</a></p>
+          <p style="font-size: 9px"><a href="#" style="color: white;">About</a></p>
+          <p style="font-size: 9px"><a href="#" style="color: white;">Trod</a></p>
+          <p style="font-size: 9px"><a href="#" style="color: white">Card : 0</a></p>
+        </div>
+      </section>
+
+      <section class="section9">
+        <div class="bloc5">
+          <h6>Politiques de confidentialité</h6>
+          <p style="font-size: 9px">
+            Nous attachons une grande importance à la protection de vos
+            données personnelles. Conformément à la législation en vigueur,
+            vous disposez d’un droit d’accès, de rectification et de
+            suppression de vos données. Pour toute demande, contactez-nous à :
+            make-up@yahoo.td.
+          </p>
+        </div>
+      </section>
+
+      <section class="section10">
+        <div class="bloc5">
+          <h6>Réseaux sociaux</h6>
+          <div class="whatsapp">
+            <i class="fas fa-whatsapp whatsapp-icon">whatsapp: +235 68 10 17 97</i>
+          </div>
+          <div>
+            <i class="fas fa-whatsapp whatsapp-icon">Facebook : make-up</i>
+          </div>
+          <div>
+            <i class="fas fa-whatsapp whatsapp-icon">Instagrame : make-up235</i>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+
+<script src="scripte.js"></script>
+
+</body>
+</html>
