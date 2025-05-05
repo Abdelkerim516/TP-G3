@@ -1,4 +1,5 @@
-# Projet Web mini site de E-commerce
+# Projet Web mini site de E-commerce Vente des Produits Cosmétiques
+
 
 travail de groupe sur la conception d'un mini site.
 Groupe 3

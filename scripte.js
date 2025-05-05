@@ -5,7 +5,7 @@ const cartInfo = document.getElementById('cart-info');
 function ajouterProduit(nomProduit) {
   // Ajouter au panier
   if (panier[nomProduit]) {
-    panier[nomProduit]++;
+    panier[nomProduit]++;//incermente le nombre de produits
   } else {
     panier[nomProduit] = 1;
   }
